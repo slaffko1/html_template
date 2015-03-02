@@ -42,12 +42,30 @@ $input_bd_w:1px;
 select.inputbox{padding:0 0 0 $input_pad_h; height:$inputheight;}
 textarea.inputbox{height:auto;}
 
-.button{display: inline-block;border: none; text-decoration: none; text-align: center; background: $red; @include border-radius(3px); color: #fff; padding: 0 25px; height: 25px; line-height: 25px; font-size: 12px;}
+.button{
+	display: inline-block;
+	border: none;
+	text-decoration: none;
+	text-align: center;
+	background: $red;
+	color: #fff;
+	padding: 0 25px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	@include border-radius(3px);
+}
 
 .form_list{
 	margin: 0; list-style: none;
-	li{margin-bottom: 10px;}
-	label{display:  vertical-align: top; line-height: $inputheight;}
+	li{
+		margin-bottom: 10px;
+	}
+	label{
+		display: inline-block;
+		vertical-align: top;
+		line-height: $inputheight;
+	}
 }
 
 html {
